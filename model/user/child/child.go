@@ -26,7 +26,7 @@ func New(userData entity.UserData, gender GenderType) user.UserInterface {
 	}
 }
 
-func (c *Child) Print() {
+func (c *Child) PrintMyData() {
 	if c.Age > 18 {
 		fmt.Println("19歳以上の方はご利用になれません．")
 		return

@@ -17,7 +17,7 @@ func main() {
 		},
 		child.Man,
 	)
-	childUser.Print()
+	childUser.PrintMyData()
 	childUser.UpdateBaseData(
 		entity.UserData{
 			Name:     "黒澤",
@@ -25,7 +25,7 @@ func main() {
 			Birthday: "1998/03/07",
 		},
 	)
-	childUser.Print()
+	childUser.PrintMyData()
 
 	fmt.Println("-------- Adult --------")
 	adultUser := adult.New(
@@ -37,11 +37,11 @@ func main() {
 		"080-1111-2222",
 		true,
 	)
-	adultUser.Print()
+	adultUser.PrintMyData()
 	adultUser.UpdateBaseData(entity.UserData{
 		Name:     "白澤",
 		Age:      23,
 		Birthday: "1997/12/07",
 	})
-	adultUser.Print()
+	adultUser.PrintMyData()
 }

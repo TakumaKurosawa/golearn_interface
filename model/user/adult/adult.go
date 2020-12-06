@@ -25,7 +25,7 @@ func New(userData entity.UserData, phone string, married bool) user.UserInterfac
 	}
 }
 
-func (a *Adult) Print() {
+func (a *Adult) PrintMyData() {
 	if a.Age <= 18 {
 		fmt.Println("18歳以下の方はご利用になれません．")
 		return
