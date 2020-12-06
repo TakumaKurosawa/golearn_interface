@@ -26,26 +26,26 @@ func New(userData entity.UserData, gender GenderType) user.UserInterface {
 	}
 }
 
-func (u *Child) Print() {
-	if u.Age > 18 {
+func (c *Child) Print() {
+	if c.Age > 18 {
 		fmt.Println("19歳以上の方はご利用になれません．")
 		return
 	}
 
-	switch u.Gender {
+	switch c.Gender {
 	case Man:
-		fmt.Printf("ようこそ！%sさん（♂）．あなたの誕生日は%sですね！\n", u.Name, u.Birthday)
+		fmt.Printf("ようこそ！%sさん（♂）．あなたの誕生日は%sですね！\n", c.Name, c.Birthday)
 	case Woman:
-		fmt.Printf("ようこそ！%sさん（♀）．あなたの誕生日は%sですね！\n", u.Name, u.Birthday)
+		fmt.Printf("ようこそ！%sさん（♀）．あなたの誕生日は%sですね！\n", c.Name, c.Birthday)
 	case Unknown:
-		fmt.Printf("ようこそ！%sさん．あなたの誕生日は%sですね！\n", u.Name, u.Birthday)
+		fmt.Printf("ようこそ！%sさん．あなたの誕生日は%sですね！\n", c.Name, c.Birthday)
 	}
 }
 
-func (u *Child) UpdateBaseData(data entity.UserData) {
-	if u.Age > 18 {
+func (c *Child) UpdateBaseData(data entity.UserData) {
+	if c.Age > 18 {
 		fmt.Println("19歳以上の方はご利用になれません．")
 		return
 	}
-	u.UserData = data
+	c.UserData = data
 }
