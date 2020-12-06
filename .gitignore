@@ -1,4 +1,3 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/macos,jetbrains+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,jetbrains+all
 
@@ -119,5 +118,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# custom file
+user.json
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,jetbrains+all
